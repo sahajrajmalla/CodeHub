@@ -1,5 +1,6 @@
 import random
 import string
+import webbrowser
 r1 = random.random()
 print(r1)
 r2 = random.randint(1, 3)
@@ -11,3 +12,6 @@ print(r4)
 number = [1, 2, 3, 4, 5]
 r5 = random.shuffle(number)
 print(number)
+
+
+webbrowser.open("https://www.facebook.com")
