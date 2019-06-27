@@ -1,4 +1,8 @@
-<h1>List of Peoples</h1>
-{% for people in persons %}
-<li>{{ people.name }}({{ people.email }})({{ people.country }})</li>
-{% endfor %}
+{% extends 'main.html' %} {% block content %}
+<h1>Costumers</h1>
+<ul>
+  {% for people in persons %}
+  <li>{{ people.name }}({{ people.email }})({{ people.country }})</li>
+  {% endfor %}
+</ul>
+{% endblock %}
