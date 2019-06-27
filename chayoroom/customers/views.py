@@ -12,3 +12,8 @@ def index(request):
 
 def vip(request):
     return HttpResponse("vip class goes here !")
+
+
+def detail(request, customer_id):
+    customer_detail = customer.objects.get(pk=customer_id)
+    return render(request, 'detail.html', {'customer_detail': customer_detail})
