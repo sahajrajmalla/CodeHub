@@ -1,0 +1,16 @@
+{% extends 'main.html' %}
+{% block content %}
+<div class = container>
+<h1>Customer's Info</h1>
+<dl>
+
+    <dt>Name</dt>
+    <dd>{{ customer_detail.name }}</dd>
+    <dt>E-mail</dt>
+    <dd>{{ customer_detail.email }} </dd>
+    <dt>Country</dt>
+    <dd>{{ customer_detail.country }}</dd>
+
+</dl>
+</div>
+{% endblock  %}
