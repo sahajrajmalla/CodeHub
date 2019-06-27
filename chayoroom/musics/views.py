@@ -5,5 +5,5 @@ from .models import new_add
 
 def index(request):
     music_list = new_add.objects.all()
-    return render(request, 'index.html',
+    return render(request, 'index2.html',
                   {'musics': music_list})

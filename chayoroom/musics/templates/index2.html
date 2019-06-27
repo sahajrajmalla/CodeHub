@@ -1,6 +1,8 @@
+{% extends 'main2.html' %} {% block content %}
 <h1>Music</h1>
 <ul>
   {% for music in musics %}
   <li>{{ music.name }} ({{ music.genere }}</li>
   {% endfor %}
 </ul>
+{% endblock %}
