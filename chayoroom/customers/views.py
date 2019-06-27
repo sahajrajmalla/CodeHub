@@ -6,3 +6,7 @@ from django.shortcuts import render
 
 def index(request):
     return HttpResponse("Hello World!, I'm in the project bro !!")
+
+
+def vip(request):
+    return HttpResponse("vip class goes here !")
