@@ -13,7 +13,7 @@
     <tbody>
       {% for people in persons  %}
       <tr>
-        <td>{{ people.name }}</td>
+        <td><a href= "{% url 'customer:detail' people.id %}">{{ people.name }}</a></td>
         <td>{{ people.email }} </td>
         <td>{{ people.country }} </td>
       </tr>
