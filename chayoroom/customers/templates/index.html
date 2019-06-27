@@ -1,8 +1,25 @@
-{% extends 'main.html' %} {% block content %}
+{% extends 'main.html' %}
+{% block content %}
 <h1>Costumers</h1>
 <ul>
-  {% for people in persons %}
-  <li>{{ people.name }}({{ people.email }})({{ people.country }})</li>
-  {% endfor %}
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Country</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for people in persons  %}
+      <tr>
+        <td>{{ people.name }}</td>
+        <td>{{ people.email }} </td>
+        <td>{{ people.country }} </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
 </ul>
 {% endblock %}
