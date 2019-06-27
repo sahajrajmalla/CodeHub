@@ -1,6 +1,9 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from .models import new_add
 
 
 def index(request):
-    return HttpResponse("Music home interface goes here....")
+    music_list = new_add.objects.all()
+    return render(request, 'index.html',
+                  {'musics': music_list})
