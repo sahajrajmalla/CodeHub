@@ -1,8 +1,9 @@
 from django.shortcuts import render
+from .models import friends
 
 # Create your views here.
 
 
 def friends(request):
-    friends = friends.objects.all()
-    return render(request, 'sahaj.html', {'friends': friends})
+    friend = friends.objects.all()
+    return render(request, 'sahaj.html', {'friends': friend})
