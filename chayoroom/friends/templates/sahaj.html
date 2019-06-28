@@ -1,6 +1,4 @@
-{% extends 'main.html' %}
-
-{% block content %}
+{% extends 'main.html' %} {% block content %}
 <table class="table">
     <thead>
         <tr>
@@ -11,14 +9,14 @@
         </tr>
     </thead>
     <tbody>
-            {% for fq in friends %}
-                <tr>
-                    <td> {{fq.name}} </td>
-                    <td> {{fq.email}} </td>
-                    <td> {{fq.sex}} </td>
-                    <td> {{fq.dob}} </td>
-                </tr>
-            {% endfor %}
+        {% for fq in friend %}
+        <tr>
+            <td>{{ fq.name }}</td>
+            <td>{{ fq.email }}</td>
+            <td>{{ fq.sex }}</td>
+            <td>{{ fq.dob }}</td>
+        </tr>
+        {% endfor %}
     </tbody>
 </table>
-{% endblock  %}
+{% endblock %}
